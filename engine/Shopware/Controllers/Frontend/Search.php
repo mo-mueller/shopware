@@ -110,7 +110,7 @@ class Shopware_Controllers_Frontend_Search extends Enlight_Controller_Action
             'sortings' => $sortings,
             'sSearchResults' => [
                 'sArticles' => $articles,
-                'sArticlesCount' => $result->getTotalCount(),
+                'sArticlesCount' => count($articles),
             ],
             'productBoxLayout' => $this->get('config')->get('searchProductBoxLayout'),
         ]);
